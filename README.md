@@ -6,3 +6,10 @@ Offline Isolated Handwriting Chinese Charater Regonization
   通过随机旋转、随机裁剪、随机添加高斯噪声对HCL2000样本集进行扩展，在增加样本量的同时提高了模型
   的泛化能力，对产生仿射形变、弹性形变等的手写汉字样本有较好识别效果。在测试集数据
   的测试中，可达到97%以上的正确率，从而验证了文中识别方法的有效性。最后利用Django搭建了孤立手写汉字识别的Web应用，使模型得以投入实际应用。
+
+## Demo
+![demo](img/demo.gif "Demo")
+
+## Future
+Keras version of implementation will soon be updated.
+Weights will be shared.
