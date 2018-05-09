@@ -10,6 +10,13 @@ Offline Isolated Handwriting Chinese Charater Regonization
 ## Demo
 ![demo](img/demo.gif "Demo")
 
+## Requirement
+Package|Version
+---|---
+TFlearn|0.3.2
+Tensorflow|1.8.0
+Anaconda3|1.8.4
+
 ## Future
 Keras version of implementation will soon be updated.
 Weights will be shared.
