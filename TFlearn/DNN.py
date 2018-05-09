@@ -1,7 +1,4 @@
-
 # coding: utf-8
-
-
 from __future__ import division, print_function, absolute_import
 
 import tflearn
@@ -67,8 +64,6 @@ pool2_1_3 = local_response_normalization(pool2_1_3)
 conv3_3 = conv_2d(pool2_1_3, 32, 2, strides=1, activation='prelu', name='conv3_3')
 pool3_3 = max_pool_2d(conv3_3, 3, strides=2)
 
-
-
 #---------------------------------------------------------
 inception_3_output = merge([inception_3_1, inception_3_2, pool3_3], mode='concat', axis=3)
 pool4 = max_pool_2d(inception_3_output, kernel_size=2, strides=1)
@@ -98,8 +93,6 @@ conv4_3 = conv_2d(pool4_1_3, 32, 2, strides=1, activation='prelu', name='conv4_3
 pool4_3 = max_pool_2d(conv4_3, 3, strides=2)
 
 
-
-
 #---------------------------------------------------------
 inception_5_output = merge([inception_4_1, inception_4_2, pool4_3], mode='concat', axis=3)
 pool5 = max_pool_2d(inception_5_output, kernel_size=5, strides=3)
@@ -124,7 +117,7 @@ model.fit(train_data, train_labels, n_epoch=EPOCH,validation_set=0,
                    show_metric=True, batch_size=BATCH_SIZE, snapshot_epoch=False,snapshot_step=100000,
                 run_id='DNN2')
 score = model.evaluate(test_data,test_labels,batch_size=BATCH_SIZE)
-          #
+
 print('Batch accuarcy: %0.4f%%' % (score[0] * 100))
 model.save('/home/guest/dujinhong/model1/DNN_trainer2')
           
