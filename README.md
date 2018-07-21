@@ -1,4 +1,4 @@
-# 基于改进核CNN的离线孤立手写汉字识别
+﻿# 基于改进核CNN的离线孤立手写汉字识别
 Offline Isolated Handwriting Chinese Charater Regonization
 
   针对孤立手写汉字的离线识别问题，借鉴GoogleNet的思想，利用深度学习开源框架Tensorflow搭建了一种广度与深度相平衡的卷积神经网络模型，使用改进的横特征、竖特征矩形卷积核，
@@ -16,7 +16,7 @@ Package|Version
 TFlearn|0.3.2
 Tensorflow|1.8.0
 Anaconda3|1.8.4
+Keras|2.2.0
 
 ## Future
-Keras version of implementation will soon be updated.
 Weights will be shared.
